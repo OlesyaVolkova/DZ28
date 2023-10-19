@@ -1,0 +1,6 @@
+Haaland, Erling, 23, Sports, PE_23, 90, 95
+Mbappe, Kylian, 25, Sports, 50
+Messi, Lionel, 36, Psychologist, OBN, 50, 70, How
+De Brin, Kevin, 32, Accountant, BUX32, 98, 99, Salary, 10
+Lewandowski, Robert, 35, Programming, 250
+
