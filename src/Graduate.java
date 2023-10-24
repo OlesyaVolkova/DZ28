@@ -1,5 +1,4 @@
-public class Graduate extends Student
-{
+public class Graduate extends Student {
     private String subject;
 
     public String getSubject() {
@@ -16,22 +15,25 @@ public class Graduate extends Student
                     String lastName, String firstName, int age,
                     String speciality, String group, double rating, double attendance,
                     String subject
-            )
-    {
+            ) {
         super(lastName, firstName, age, speciality, group, rating, attendance);
         setSubject(subject);
         System.out.println("GConstructor:\t" + Integer.toHexString(hashCode()));
     }
 
-    public Graduate(Graduate other)
-    {
+    public Graduate(Graduate other) {
         super(other);
-        this.subject= other.subject;
+        this.subject = other.subject;
         System.out.println("GCopyConstructor:\t" + Integer.toHexString(hashCode()));
     }
 
+    public void init(String[] values) {
+        super.init(values);
+        subject = values[8];
+    }
+
     public String toString() {
-        return super.toString() + " " + subject;
+        return super.toString() + ", " + subject;
 
     }
 }

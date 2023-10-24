@@ -1,4 +1,4 @@
-public class Teacher extends Human{
+public class Teacher extends Human {
     private String spesiality;
     private int experience;
 
@@ -25,7 +25,13 @@ public class Teacher extends Human{
         System.out.println("TConstructor:\t" + Integer.toHexString(hashCode()));
     }
 
-    public String toString(){
-        return  super.toString() + " " + spesiality + " " + experience;
+    public void init(String[] values) {
+        super.init(values);
+        spesiality = values[4];
+        experience = Integer.parseInt(values[5]);
+    }
+
+    public String toString() {
+        return super.toString() + ", " + spesiality + ", " + experience;
     }
 }

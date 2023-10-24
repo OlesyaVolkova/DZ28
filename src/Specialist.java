@@ -32,8 +32,15 @@ public class Specialist extends Graduate
         this.grade= other.grade;
         System.out.println("SpCopyConstructor:\t" + Integer.toHexString(hashCode()));
     }
+
+    public void init(String[] values)
+    {
+        super.init(values);
+        int grade =Integer.parseInt(values[9]);
+    }
+
     @Override
     public String toString() {
-        return super.toString() + " grade: " + grade;
+        return super.toString() + ","+ grade;
     }
 }
